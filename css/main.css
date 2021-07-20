@@ -916,8 +916,13 @@ body {
 }
 
 .page-footer .container {
-  display: flex;
   align-items: baseline;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1065,7 +1070,6 @@ body {
 @media screen and (max-width: 1199px) {
   .page-footer__right-part .button {
     margin-top: 20px;
-    text-align: center;
   }
 }
 
