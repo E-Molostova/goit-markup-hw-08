@@ -123,6 +123,7 @@
     padding-right: 89px;
     justify-content: space-between;
     margin-bottom: 60px;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
@@ -155,6 +156,9 @@
   @media screen and (max-width: 1199px) {
     margin-top: 20px;
   }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin: 0 auto;
+  // }
 }
 
 .page-footer__forms {
@@ -180,6 +184,9 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .page-footer__input::placeholder {
