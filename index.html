@@ -20,7 +20,8 @@
         <a href="./index.html">
           <span class="logo page-header__logo_Web-color">Web</span>
           <span class="logo page-header__logo_Studio-color">Studio</span>
-        </a>
+        </a> 
+        
         <ul class="site-nav__list">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link_active-page site-nav__link_underline" href="">Студия</a>
@@ -48,8 +49,56 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open">
+        <svg width="24" height="16" >
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mobile-menu is-hidden">
+        <div class="container">
+          <button class="btn-close">
+            <svg class="modal-close-icon" width="19" height="19">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list__item">
+              <a href="" class="mobile-menu-list__link">Студия</a>
+            </li>
+            <li class="mobile-menu-list__item">
+              <a href="" class="mobile-menu-list__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu-list__item">
+              <a href="" class="mobile-menu-list__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-contacts__item">
+                <a href="" class="mobile-menu-contacts__link mobile-menu-contacts__link_size_big">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a href="" class="mobile-menu-contacts__link mobile-menu-contacts__link_size_small">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-social">
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Instagram</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Twitter</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">Facebook</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="" class="mobile-menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+      </div>
     </div>
-  </header>
+  </header> 
   <main>
     <!--Герой-->
     <section class="section-hero">
@@ -59,7 +108,7 @@
       </div>
     </section>
 
-    <!--Преимущества-->
+    <!-- Преимущества -->
     <section class="section-advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -96,46 +145,48 @@
       </div>
     </section>
 
-    <!--Чем мы занимаемся - фото-->
+    <!-- Чем мы занимаемся - фото -->
     <section class="section-photo">
       <div class="container">
         <h2 class="section-photo__title">Чем мы занимаемся</h2>
         <ul class="section-photo__list">
           <li class="section-photo__item">
-            <img 
-              src="./images/box1.jpg" 
-              alt="Человек печатает на клавиатуре компьютера" 
-              width="370"
-              height="294" />
+            <picture>
+              <source srcset="./images/desktop/box1.jpg 1x, ./images/desktop/box1x2.jpg 2x" media="(min-width:1200px)">
+              <img src="./images/desktop/box1.jpg" alt="Человек печатает на клавиатуре компьютера" />
+            </picture>
             <p class="section-photo__text">Десктопные приложения</p>
           </li>
           <li class="section-photo__item">
-            <img 
-              src="./images/box2.jpg" 
-              alt="Человек работает за ноутбуком с телефоном в левой руке"
-              width="370" 
-              height="294" />
+            <picture>
+              <source srcset="./images/desktop/box2.jpg 1x, ./images/desktop/box2x2.jpg 2x" media="(min-width:1200px)">
+              <img src="./images/desktop/box2.jpg" alt="Человек работает за ноутбуком с телефоном в левой руке" />
+            </picture>
             <p class="section-photo__text">Мобильные приложения</p>
           </li>
           <li class="section-photo__item">
-            <img 
-              src="./images/box3.jpg" 
-              alt="Человек работает на планшете с графическим дизайном"
-              width="370" 
-              height="294" />
+            <picture>
+              <source srcset="./images/desktop/box3.jpg 1x, ./images/desktop/box3x2.jpg 2x" media="(min-width:1200px)">
+              <img src="./images/desktop/box3.jpg" alt="Человек работает на планшете с графическим дизайном" />
+            </picture>
             <p class="section-photo__text">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!--Команда-->
+    <!-- Команда -->
     <section class="section-team">
       <div class="container">
         <h2 class="section-team__title">Наша команда</h2>
         <ul class="section-team__list">
           <li class="section-team__item">
-            <img src="./images/photo1.jpg" alt="Фотография Игоря Демьяненко" width="270" height="260" />
+            <picture>
+              <source srcset="./images/desktop/member1.jpg 1x, ./images/desktop/member1x2.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/tablet/member1.jpg 1x, ./images/tablet/member1x2.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/mobile/member1.jpg 1x, ./images/mobile/member1x2.jpg 2x" media="(min-width:480px)">
+              <img src="./images/mobile/member1.jpg" alt="Фотография Игоря Демьяненко" />
+            </picture>
             <h3 class="section-team__member">Игорь Демьяненко</h3>
             <p class="section-team__profession">Product Designer</p>
             <ul class="social-networks__list">
@@ -170,7 +221,12 @@
             </ul>
           </li>
           <li class="section-team__item">
-            <img src="./images/photo2.jpg" alt="Фотография Ольги Репиной" width="270" height="260" />
+            <picture>
+              <source srcset="./images/desktop/member2.jpg 1x, ./images/desktop/member2x2.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/tablet/member2.jpg 1x, ./images/tablet/member2x2.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/mobile/member2.jpg 1x, ./images/mobile/member2x2.jpg 2x" media="(min-width:480px)">
+              <img src="./images/mobile/member2.jpg" alt="Фотография Ольги Репиной" />
+            </picture>
             <h3 class="section-team__member">Ольга Репина</h3>
             <p class="section-team__profession">Frontend Developer</p>
             <ul class="social-networks__list">
@@ -205,7 +261,12 @@
             </ul>
           </li>
           <li class="section-team__item">
-            <img src="./images/photo3.jpg" alt="Фотография Николая Тарасова" width="270" height="260" />
+            <picture>
+              <source srcset="./images/desktop/member3.jpg 1x, ./images/desktop/member3x2.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/tablet/member3.jpg 1x, ./images/tablet/member3x2.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/mobile/member3.jpg 1x, ./images/mobile/member3x2.jpg 2x" media="(min-width:480px)">
+              <img src="./images/mobile/member3.jpg" alt="Фотография Николая Тарасова" />
+            </picture>
             <h3 class="section-team__member">Николай Тарасов</h3>
             <p class="section-team__profession">Marketing</p>
             <ul class="social-networks__list">
@@ -241,7 +302,12 @@
             </ul>
           </li>
           <li class="section-team__item">
-            <img src="./images/photo4.jpg" alt="Фотография Михаила Ермакова" width="270" height="260" />
+            <picture>
+              <source srcset="./images/desktop/member4.jpg 1x, ./images/desktop/member4x2.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/tablet/member4.jpg 1x, ./images/tablet/member4x2.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/mobile/member4.jpg 1x, ./images/mobile/member4x2.jpg 2x" media="(min-width:480px)">
+              <img src="./images/mobile/member4.jpg" alt="Фотография Михаила Ермакова" />
+            </picture>
             <h3 class="section-team__member">Михаил Ермаков</h3>
             <p class="section-team__profession">UI Designer</p>
             <ul class="social-networks__list">
@@ -278,7 +344,7 @@
         </ul>
       </div>
     </section>
-    <!--Постоянные клиенты-->
+    <!-- Постоянные клиенты -->
     <section class="section-clients">
       <div class="container">
         <h2 class="section-clients__title">Постоянные клиенты</h2>
@@ -327,7 +393,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> 
   </main>
   <footer class="page-footer">
     <div class="container">
@@ -393,7 +459,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <form class="modal__form">
@@ -457,8 +523,8 @@
       </div>
     </div>
   </div>
-
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
-</html>
+</html> 

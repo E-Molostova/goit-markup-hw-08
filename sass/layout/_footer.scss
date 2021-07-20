@@ -1,13 +1,24 @@
 .page-footer {
   background-color: #2f303a;
   line-height: 1.71;
-  height: 252px;
+  // height: 252px;
   padding-top: 60px;
 }
 
 .page-footer .container {
   display: flex;
   align-items: baseline;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.page-footer__left-part {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .page-footer__logo_Web-color {
@@ -41,6 +52,10 @@
 
 .page-footer__central-part {
   margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .page-footer__text {
@@ -87,14 +102,24 @@
 
 .page-footer__right-part {
   margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .page-footer__forms {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .page-footer__input {
-  width: 358px;
+  width: 100%;
+  max-width: 358px;
   height: 50px;
   border-radius: 4px;
   padding: 15px;

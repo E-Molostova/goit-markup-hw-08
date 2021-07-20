@@ -1,6 +1,10 @@
 .section-photo {
   padding-top: 47px;
   padding-bottom: 47px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .section-photo__title,
