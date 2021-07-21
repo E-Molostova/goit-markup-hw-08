@@ -427,6 +427,13 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .modal__close-btn {
   position: absolute;
   width: 30px;
