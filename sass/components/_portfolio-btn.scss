@@ -2,12 +2,15 @@
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 60px;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 60px;
     padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
   }
 }
 

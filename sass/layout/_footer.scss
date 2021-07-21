@@ -23,6 +23,12 @@
     text-align: center;
     width: 100%;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .page-footer__logo_Web-color {
@@ -162,17 +168,13 @@
 }
 
 .page-footer__forms {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
